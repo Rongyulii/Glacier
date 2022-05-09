@@ -1,0 +1,315 @@
+<!doctype html>
+<html>
+<title>Glacier</title>
+<link rel="Shortcut Icon" href="Glacier.png">
+</html>
+<head>
+<header>
+  Glacier</header>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <div class="b0">
+    <a href="javascript:playSound('s0');">
+      <img src="button00.png" width="50" height="50" onclick='playAudio()'>
+   <a href="javascript:playSound('s0')"></a>
+</div>
+  <div class="b1">
+      <img src="button01.png" width="50" height="50" onmouseover='playAudio1()'>
+
+  <div class="t1">
+      <img src="Glacier01.gif" width="706px" height="706px"></div></div>
+
+  <div class="b2">
+      <img src="button02.png" width="50" height="50" onmouseover='playAudio2()'>
+
+  <div class="t2">  <img src="Glacier02.gif" width="706px" height="706px"></div></div>
+
+  <div class="b3">
+    <img src="button03.png" width="50" height="50" onmouseover='playAudio3()'>
+  <div class="t3">
+  <img src="Glacier03.gif" width="706px" height="706px">
+  </div></div>
+  <div class="b4">
+    <img src="button04.png" width="50" height="50" onmouseover='playAudio4()'>
+  <div class="t4">
+  <img src="Glacier04.gif" width="706px" height="706px">
+  </div></div>
+  <div class="b5">
+    <img src="button05.png" width="50" height="50" onmouseover='playAudio5()'>
+  <div class="t5">
+  <img src="Glacier05.gif" width="706px" height="706px">
+</div></div>
+<div class="b6">
+  <img src="button06.png" width="50" height="50" onmouseover='playAudio6()'>
+  <div class="t6">
+  <img src="Glacier06.gif" width="706px" height="706px">
+</div></div>
+<div class="bg">
+<img src="ocean.gif" width="2400" height="1350">
+</div>
+ <audio id="audio0" src="sound_bg_1.mp3" loop="true" autobuffer  preload="auto"></audio>
+ <audio id="audio1" src="soundtrack.mp3" loop="true" autobuffer  preload="auto"></audio>
+<audio id="audio2" src="sound01.mp3"  autobuffer  preload="auto"></audio>
+<audio id="audio3" src="sound02.mp3"  autobuffer  preload="auto"></audio>
+<audio id="audio4" src="sound03.mp3"  autobuffer  preload="auto"></audio>
+<audio id="audio5" src="sound04.mp3"  autobuffer  preload="auto"></audio>
+<audio id="audio6" src="sound05.mp3"  autobuffer  preload="auto"></audio>
+<audio id="audio7" src="sound06.mp3"  autobuffer  preload="auto"></audio>
+
+</body>
+
+
+<script>
+function playAudio() {
+  var audio0=document.getElementById('audio0');
+var audio1=document.getElementById("audio1");
+audio1.volume=0.2;
+audio0.volume=0.8;
+audio0.play();
+   audio1.play();
+};
+function playAudio1() {
+var audio2=document.getElementById("audio2");
+   audio2.play();
+};
+function playAudio2() {
+var audio3=document.getElementById("audio3");
+   audio3.play();
+};
+function playAudio3() {
+var audio4=document.getElementById("audio4");
+   audio4.play();
+};
+function playAudio4() {
+var audio5=document.getElementById("audio5");
+   audio5.play();
+};
+function playAudio5() {
+var audio6=document.getElementById("audio6");
+   audio6.play();
+};
+function playAudio6() {
+var audio7=document.getElementById("audio7");
+   audio7.play();
+};
+</script>
+
+<style>
+
+.t1{
+  width:0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  overflow: hidden;
+  transform:scale(100%);
+  opacity: 0;
+z-index: -5
+}
+.t2{
+  width:0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+    overflow: hidden;
+  transform:scale(100%);
+  opacity: 0;
+z-index: -5
+}
+.t3{
+  width:0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+    overflow: hidden;
+  transform:scale(100%);
+  opacity: 0;
+z-index: -5
+}
+.t4{
+  width:0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+    overflow: hidden;
+  transform:scale(100%);
+  opacity: 0;
+z-index: -5
+}
+.t5{
+  width:0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+    overflow: hidden;
+  transform:scale(100%);
+  opacity: 0;
+z-index: -5
+}
+.t6{
+  width:0px;
+  height: 0px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform:scale(100%);
+  opacity: 0;
+z-index: -5
+}
+.bg{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  transform:scale(100%);
+  opacity: 1;
+z-index: -10
+}
+
+.b0{
+  cursor: pointer;
+  position: absolute;
+  top: 75px;
+  left: 400px;
+  transform:scale(100%);
+    opacity: 1;
+      z-index: 5;
+}
+.b1{
+  cursor: pointer;
+  position: absolute;
+  top: 200px;
+  left: 30px;
+  transform:scale(100%);
+    opacity: 1;
+      z-index: 5;
+}
+.b1:active .t1{
+    cursor: pointer;
+  top: 20px;
+  left: 600px;
+  width:706px;
+  height: 706px;
+opacity: 1;
+        z-index: 15;
+}
+.b2{
+  cursor: pointer;
+  position: absolute;
+  top: 800px;
+  left: 1810px;
+  transform:scale(100%);
+    opacity: 1;
+      z-index: 5;
+}
+.b2:active .t2{
+  cursor: pointer;
+  top:-580px;
+  left: -1180px;
+  width:1920px;
+  height: 1080px;
+opacity: 1;
+        z-index: 15;
+}
+.b3{
+  cursor: pointer;
+  position: absolute;
+  top: 400px;
+  left: 210px;
+  transform:scale(100%);
+      opacity: 1;
+      z-index: 5;
+}
+.b3:active .t3{
+    cursor: pointer;
+  top: -180px;
+  left: 420px;
+  width:1920px;
+  height: 1080px;
+opacity: 1;
+        z-index: 15;
+}
+.b4{
+  cursor: pointer;
+  position: absolute;
+  top: 700px;
+  left: 1610px;
+  transform:scale(100%);
+        opacity: 1;
+          z-index: 5;
+}
+.b4:active .t4{
+    cursor: pointer;
+  top: -480px;
+  left: -980px;
+  width:1920px;
+  height: 1080px;
+opacity: 1;
+        z-index: 15;
+}
+.b5{
+  cursor: pointer;
+  position: absolute;
+  top: 900px;
+  left: 410px;
+  transform:scale(100%);
+      opacity: 1;
+        z-index: 5;
+}
+.b5:active .t5{
+    cursor: pointer;
+  top: -680px;
+  left: 220px;
+  width:1920px;
+  height: 1080px;
+opacity: 1;
+        z-index: 15;
+}
+.b6{
+  cursor: pointer;
+  position: absolute;
+  top: 900px;
+  left: 1710px;
+  transform:scale(100%);
+      opacity: 1;
+        z-index: 5;
+}
+.b6:active .t6{
+    cursor: pointer;
+  top: -680px;
+  left: -1080px;
+  width:1920px;
+  height: 1080px;
+opacity: 1;
+        z-index: 15;
+
+}
+body {
+  background-color:#d6d6d6;
+
+
+}
+header {
+position: absolute;
+color:#EDEDED;
+text-shadow: 5px 3px 5px #8E8E8E；
+;
+
+width: 150px;
+left: 100px;
+top: 50px;
+font-size: 70px;
+font-family: 'Cinzel', serif;
+text-align: middle;
+z-index: 15;
+}
+</style>
